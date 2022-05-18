@@ -20,11 +20,12 @@ function App() {
 
   return (
     <section className="container my-5 d-flex flex-column align-items-center">
-      <img src={logo} alt="logo de los simpson" />
-      <Button variant="warning" className="my-5 w-50">
+      <img src={logo} alt="logo de los simpson"  />
+      <Button variant="warning" className="my-5 w-50" onClick = {() =>consultarAPI()}>
         Obtener frases
       </Button>
-      <Frases></Frases>
+      
+      <Frases className= 'w100' personaje={personaje}></Frases> >
     </section>
   );
 }
